@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-image:url("background_image.jpg");
+                 box-sizing: border-box;
+                 border: 100px outset rgba(0,0,0,0);
+                 filter: blur(8px);
+            }
+            .bg-image
+            {
+                background-image: url("background_image.jpg");
+                filter: blur(8px);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .d2
+            {
+                text-align: center;
+            }
+            .d3
+            {
+                background-color: rgba(0,0,0,0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="bg-image"></div> -->
+
+        <div class="d1" align="center">
+            <img src="logo of hotel.png" alt="Hotel Name">
+        </div>
+
+        <div class="d2">
+            <h2>
+                HOTEL RESERVATION FORM
+            </h2>
+        </div>
+
+        <div class="d3">
+            <form>
+                <leble for="booking date">Form</leble><br>
+                <input type="date" id="from" name="booking date"><br>
+                <br>
+
+                <leble for="booking date">To</leble><br>
+                <input type="date" id="to" name="booking date"><br>
+                <br>
+
+                <lable for="room">Room type</lable><br>
+                <select name="room" id="room">
+                    <option value="single room">Single room</option>
+                    <option value="double room">Double room</option>
+                    <option value="apartment">Apartment</option>
+                </select><br>
+                <br>
+
+                <lable for="requirments">Room requirements</lable>
+                <select name="room" id="requirements">
+                    <option value="no preference">No Preference</option>
+                    <option value="non smoking">Non Smoking</option>
+                    <option vlue="smoking">Smoking</option>
+                </select><br>
+                <br>
+
+                <leble for="adults">Adults</leble>
+                <select name="adult" id="adult">
+                    <option>-</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select><br>
+                <br>
+
+                <leble for="children">Children</leble>
+                <select name="children" id="children">
+                    <option>-</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select><br>
+                <br>
+
+                <leble for="name">Name</leble>
+                <input type="text" id="name" name="name"><br>
+                <br>
+
+                <leble for="email">Email</leble>
+                <input type="email" id="email" name="email"><br>
+                <br>
+
+                <leble for="phone">Phone</leble>
+                <input type="tel" id="phone" name="phone" 
+                placeholder="0123456789" pattern="[0-9]{10}" required><br>
+            </form>
+        </div>
+    </body>
+</html>
